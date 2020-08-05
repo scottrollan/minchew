@@ -1,0 +1,87 @@
+@import '../styles/custom-properties.scss';
+@import '../styles/custom-media.scss';
+
+.textScrollDiv {
+  @include eighty;
+  height: 44vw;
+  background-image: url('../assets/multimediaGal.jpg');
+  background-size: contain;
+  display: flex;
+  justify-content: flex-end;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      width: 100%;
+      height: 55vw;
+      margin: 0;
+    }
+  }
+}
+
+.scrollWrapper {
+  width: 43%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0 2rem;
+  text-align: left;
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  /* apply animation */
+  -moz-animation: scroll-up 20s linear infinite;
+  -webkit-animation: scroll-up 20s linear infinite;
+  animation: scroll-up 20s linear infinite;
+}
+@-moz-keyframes scroll-up {
+  0% {
+    -moz-transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-130%);
+  }
+}
+@-webkit-keyframes scroll-up {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-130%);
+  }
+}
+@keyframes scroll-up {
+  0% {
+    -moz-transform: translateY(100%); /* Browser bug fix */
+    -webkit-transform: translateY(100%); /* Browser bug fix */
+    transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-130%); /* Browser bug fix */
+    -webkit-transform: translateY(-130%); /* Browser bug fix */
+    transform: translateY(-130%);
+  }
+}
+
+.testimonial {
+  margin-bottom: 0;
+  font-style: italic;
+}
+.signature {
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.welcome {
+  @include eighty;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.welcome h2 {
+  margin: 3rem 0;
+}

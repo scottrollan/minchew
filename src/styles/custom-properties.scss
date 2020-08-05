@@ -1,0 +1,32 @@
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --minchew-blue: #32739f;
+  --minchew-blue-overlay: rgba(50, 115, 159, 0.3);
+  --minchew-light-gray: #f1f1f1;
+  --minchew-gray: #808080;
+  --black: #343a40;
+
+  /* Measurements */
+
+  --max-width-mobile: 1251px;
+}
+
+@mixin lightButton {
+  background-color: transparent;
+  color: var(--light-button);
+  font-size: x-large;
+  padding: 1rem 2rem;
+  border: 2px solid var(--light-button);
+  border-radius: 2rem;
+  &:hover {
+    background-color: var(--minchew-blue);
+    color: var(--black);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@mixin eighty {
+  width: 80%;
+  margin: 0 10%;
+}

@@ -1,0 +1,17 @@
+@import '../styles/custom-properties.scss';
+
+.header {
+  width: 100%;
+  margin: 0;
+  background-color: var(--black);
+  padding: 3rem 0;
+}
+
+.navBar {
+  width: 80%;
+  margin: 0 10%;
+}
+h3 {
+  letter-spacing: 5px;
+  font-weight: 900;
+}
