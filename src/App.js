@@ -7,6 +7,7 @@ import Advertisers from './pages/Advertisers';
 import Contact from './pages/Contact';
 import Experience from './pages/Experience';
 import Home from './pages/Home';
+import Footer from './components/Footer';
 import './App.scss';
 
 function App() {
@@ -20,9 +21,10 @@ function App() {
           <Route path="/Advertisers" exact component={Advertisers}></Route>
           <Route path="/Experience" exact component={Experience}></Route>
           <Route path="/Contact" exact component={Contact}></Route>
-          <Route path="/Home" exact component={Home}></Route>
+          <Route path="/" exact component={Home}></Route>
         </Switch>
       </Router>
+      <Footer />
     </div>
   );
 }

@@ -24,7 +24,7 @@ const Header = () => {
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/Home"
+              to="/"
             >
               Home
             </Link>

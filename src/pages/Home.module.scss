@@ -1,5 +1,6 @@
 @import '../styles/custom-properties.scss';
 @import '../styles/custom-media.scss';
+@import 'react-alice-carousel/lib/scss/alice-carousel.scss';
 
 .textScrollDiv {
   @include eighty;
@@ -38,7 +39,41 @@
   -moz-animation: scroll-up 20s linear infinite;
   -webkit-animation: scroll-up 20s linear infinite;
   animation: scroll-up 20s linear infinite;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      display: none;
+    }
+  }
 }
+.scrollWrapperMobile {
+  width: 90%;
+  height: 180px;
+  margin: 2rem 5%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      display: inherit;
+    }
+  }
+}
+.scrollerMobile {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 0 1rem;
+  text-align: left;
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  /* apply animation */
+  -moz-animation: scroll-up-mobile 40s linear infinite;
+  -webkit-animation: scroll-up-mobile 40s linear infinite;
+  animation: scroll-up-mobile 40s linear infinite;
+}
+
 @-moz-keyframes scroll-up {
   0% {
     -moz-transform: translateY(100%);
@@ -84,4 +119,33 @@
 }
 .welcome h2 {
   margin: 3rem 0;
+}
+
+@-moz-keyframes scroll-up-mobile {
+  0% {
+    -moz-transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-130%);
+  }
+}
+@-webkit-keyframes scroll-up-mobile {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-130%);
+  }
+}
+@keyframes scroll-up-mobile {
+  0% {
+    -moz-transform: translateY(100%); /* Browser bug fix */
+    -webkit-transform: translateY(100%); /* Browser bug fix */
+    transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-430%); /* Browser bug fix */
+    -webkit-transform: translateY(-430%); /* Browser bug fix */
+    transform: translateY(-430%);
+  }
 }

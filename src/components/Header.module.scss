@@ -1,17 +1,36 @@
 @import '../styles/custom-properties.scss';
+@import '../styles/custom-media.scss';
 
 .header {
   width: 100%;
   margin: 0;
   background-color: var(--black);
   padding: 3rem 0;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      padding: 0;
+    }
+  }
 }
 
 .navBar {
   width: 80%;
   margin: 0 10%;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+    }
+  }
 }
 h3 {
   letter-spacing: 5px;
   font-weight: 900;
+  // @media (pointer: coarse) {
+  //   @media screen and (max-width: $breakpoint-handheld) {
+  //   }
+  // }
 }
