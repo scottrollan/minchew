@@ -60,12 +60,11 @@ const ContactForm = () => {
   return (
     <Form
       onSubmit={handleSubmit}
-      data-netlify-recaptcha="true"
       style={{
-        minHeight: '100vh',
         width: '100%',
-        padding: '0 calc(50% - 320px',
+        padding: '0 0 2rem 0',
       }}
+      name="contact"
       id="contactForm"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -104,7 +103,6 @@ const ContactForm = () => {
         required
         className={styles.textArea}
       />
-      <div data-netlify-recaptcha="true"></div>{' '}
       <Button
         variant="secondary"
         className={styles.contactButton}
