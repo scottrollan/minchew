@@ -64,10 +64,9 @@ const ContactForm = () => {
         width: '100%',
         padding: '0 0 2rem 0',
       }}
-      name="contact"
       id="contactForm"
     >
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="contact-form" value="contact" />{' '}
       <AlertMessageSent />
       <h2 style={{ color: 'var(--light-grey)', padding: '2vh 0' }}>
         CONTACT US
