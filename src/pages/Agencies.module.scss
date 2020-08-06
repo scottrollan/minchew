@@ -1,0 +1,62 @@
+@import '../styles/custom-properties.scss';
+@import '../styles/custom-media.scss';
+
+.agencies {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-size: calc(18px + 0.5vw);
+  text-align: left;
+  background-image: url('../assets/help.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      background-attachment: scroll;
+      background-size: contain;
+      z-index: 3;
+    }
+  }
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-overlay);
+  z-index: 1;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      background-color: var(--minchew-blue);
+    }
+  }
+}
+.agencies img {
+  display: none;
+  width: 100%;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      display: inherit;
+      z-index: 2;
+    }
+  }
+}
+.agencies p,
+.agencies ul {
+  margin: 1rem 10%;
+  color: var(--white);
+  z-index: 2;
+}
+.agencies p:nth-child(3) {
+  margin-top: 40vh;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.agencies ul {
+  list-style-type: square;
+  list-style-position: inside;
+}
