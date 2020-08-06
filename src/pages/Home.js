@@ -7,6 +7,11 @@ const Home = () => {
     <div className={styles.Home}>
       <div className={[`${styles.textScrollDiv} ${styles.eighty} `]}>
         <div className={styles.scrollWrapper}>
+          <div className={styles.maximized}>
+            <p className={styles.first}>YOUR</p>
+            <p className={styles.second}>MEDIA</p>
+            <p className={styles.third}>MAZIMIZED</p>
+          </div>
           <div className={styles.scroller}>
             <p className={styles.testimonial}>
               Thank you – as I am fussing about an agency that I work with that
