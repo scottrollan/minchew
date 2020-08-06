@@ -1,5 +1,4 @@
 import React from 'react';
-import AliceCarousel from 'react-alice-carousel';
 import styles from './Home.module.scss';
 
 const Home = () => {
