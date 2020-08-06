@@ -60,7 +60,7 @@ const ContactForm = () => {
   return (
     <Form
       onSubmit={handleSubmit}
-      action="/thank-you/"
+      data-netlify-recaptcha="true"
       style={{
         minHeight: '100vh',
         width: '100%',
@@ -94,7 +94,6 @@ const ContactForm = () => {
           className={styles.nameEmailInput}
         />
       </div>
-
       <Form.Control
         as="textarea"
         name="message"
@@ -105,7 +104,7 @@ const ContactForm = () => {
         required
         className={styles.textArea}
       />
-      {/* </Form.Group> */}
+      <div data-netlify-recaptcha="true"></div>{' '}
       <Button
         variant="secondary"
         className={styles.contactButton}
