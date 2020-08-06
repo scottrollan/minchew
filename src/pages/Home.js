@@ -10,7 +10,7 @@ const Home = () => {
           <div className={styles.maximized}>
             <p className={styles.first}>YOUR</p>
             <p className={styles.second}>MEDIA</p>
-            <p className={styles.third}>MAZIMIZED</p>
+            <p className={styles.third}>MAXIMIZED</p>
           </div>
           <div className={styles.scroller}>
             <ScrollText />

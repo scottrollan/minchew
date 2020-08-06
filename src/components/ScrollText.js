@@ -7,7 +7,7 @@ export const ScrollText = () => {
       <p className={styles.testimonial}>
         Thank you – as I am fussing about an agency that I work with that is
         sooo uncooperative, I say aloud….”why can’t they all be Michele
-        Minchew”!!! You truly are a pleasure!
+        Minchew?!!” You truly are a pleasure!
       </p>
       <p className={styles.signature}>
         - Becky McAlexander, Account Executive Comcast Spotlight

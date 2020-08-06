@@ -4,6 +4,8 @@
 .textScrollDiv {
   @include eighty;
   height: 44vw;
+  max-height: 83vh;
+  max-width: 1078px;
   background-image: url('../assets/multimediaGal.jpg');
   background-size: contain;
   display: flex;
@@ -32,6 +34,21 @@
   -moz-animation: scroll-up 30s linear infinite;
   -webkit-animation: scroll-up 30s linear infinite;
   animation: scroll-up 30s linear infinite;
+  @media screen and (max-width: $breakpoint-extra-large) {
+    -moz-animation: scroll-up 60s linear infinite;
+    -webkit-animation: scroll-up 60s linear infinite;
+    animation: scroll-up 60s linear infinite;
+  }
+  @media screen and (max-width: $breakpoint-large) {
+    -moz-animation: scroll-up 90s linear infinite;
+    -webkit-animation: scroll-up 90s linear infinite;
+    animation: scroll-up 90s linear infinite;
+  }
+  @media screen and (max-width: $breakpoint-medium) {
+    -moz-animation: scroll-up 150s linear infinite;
+    -webkit-animation: scroll-up 150s linear infinite;
+    animation: scroll-up 150s linear infinite;
+  }
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       display: none;
@@ -131,13 +148,13 @@
   margin: 0;
   padding: 0 1rem;
   text-align: left;
-  -moz-transform: translateY(100%);
-  -webkit-transform: translateY(100%);
-  transform: translateY(100%);
+  -moz-transform: translateY(300px);
+  -webkit-transform: translateY(300px);
+  transform: translateY(300px);
   /* apply animation */
-  -moz-animation: scroll-up-mobile 50s linear infinite;
-  -webkit-animation: scroll-up-mobile 50s linear infinite;
-  animation: scroll-up-mobile 50s linear infinite;
+  -moz-animation: scroll-up-mobile 30s linear infinite;
+  -webkit-animation: scroll-up-mobile 30s linear infinite;
+  animation: scroll-up-mobile 30s linear infinite;
 }
 
 @-moz-keyframes scroll-up {
