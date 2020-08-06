@@ -1,0 +1,37 @@
+@import '../styles/custom-media.scss';
+@import '../styles/custom-properties.scss';
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+    var(--minchew-blue),
+    var(--white),
+    var(--white),
+    var(--white),
+    var(--white),
+    var(--minchew-blue)
+  );
+}
+.about p {
+  margin: 2rem 10%;
+  width: 45%;
+  font-size: calc(18px + 0.5vw);
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      margin: 1rem 5%;
+      width: 60%;
+    }
+  }
+}
+.about p:nth-child(odd) {
+  align-self: flex-start;
+  text-align: left;
+}
+.about p:nth-child(even) {
+  align-self: flex-end;
+  text-align: right;
+}
+.about img {
+  width: 100%;
+}
