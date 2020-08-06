@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from '../assets/help.jpg';
+import photo from '../assets/gears.jpg';
 import styles from './Agencies.module.scss';
 
 const Agencies = () => {
@@ -7,38 +7,28 @@ const Agencies = () => {
     <div className={styles.agencies}>
       <div className={styles.overlay}></div>
       <img src={photo} alt="" />
-      <p>Looking for a media partner to help you maximize your ROI?</p>
       <p>
-        Whether your marketing plans call for one market, one hundred markets or
-        all 210, Minchew Media is your go-to source for all things electronic
-        media.
+        Have an advertising project out of your scope of expertise? Too many
+        markets to manage? Looking for some innovative solutions or a fresh
+        approach? Better Efficiencies? Branding or Direct Response?
       </p>
       <p>
-        At Minchew Media, we can provide you with soup to nuts media planning
-        and placement for your Brand or Direct Response campaign.
-      </p>
-      <p>
-        We specialize in all forms of electronic media and will make sure that
-        you are utilizing the correct media for your objectives and target
-        audience, including both traditional and new media outlets.
+        Minchew Media can provide you with project assistance or serve as your
+        white label media department.
       </p>
       <ul>
-        <b>We have experience with all forms of electronic media including:</b>
-        <li>
-          TV - spot cable and broadcast, network cable and broadcast,
-          syndication and unwired networks.
-        </li>
-        <li>Radio - national, local, syndicated, satellite and digital</li>
-        <li>New Media - digital video and display, VOD and more....</li>
+        <b>
+          We'll provide you with client ready documentation all the way through
+          the project cycle including:
+        </b>
+        <li>Planning, Negotiating, Buying</li>
+        <li>Stewardship</li>
+        <li>Reconciliation and Invoicing</li>
       </ul>
       <p>
-        Yes, we utilize research, but our approach is always common sense based
-        and customized specifically to achieve your campaign objectives as
-        efficiently possible.
+        We are Strata<sup>&#8482;</sup> licensed and conversant.
       </p>
-      <p>
-        <strong>Minchew Media</strong> - <i>Your Media Maximized</i>
-      </p>
+      <p>Prompt reliable exemplary service is at the heart of every project.</p>
     </div>
   );
 };

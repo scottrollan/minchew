@@ -7,10 +7,10 @@
   flex-direction: column;
   font-size: calc(18px + 0.5vw);
   text-align: left;
-  background-image: url('../assets/help.jpg');
+  background-image: url('../assets/gears.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center top;
+  background-position: 80% 60%;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-large) {
       background-attachment: scroll;
@@ -27,7 +27,12 @@
   z-index: 1;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-large) {
-      background-color: var(--minchew-blue);
+      background-image: linear-gradient(
+        var(--minchew-blue-dark-accent),
+        var(--minchew-blue-dark-accent),
+        var(--minchew-blue),
+        var(--minchew-blue-dark-accent)
+      );
     }
   }
 }
