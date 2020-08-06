@@ -2,7 +2,7 @@
   /* Colors */
   --white: #ffffff;
   --minchew-blue: #32739f;
-  --minchew-blue-dark-accent: #193a4f;
+  --minchew-blue-dark-accent: #245272;
   --minchew-blue-overlay: rgba(50, 115, 159, 0.5);
   --dark-overlay: rgba(0, 0, 0, 0.6);
   --minchew-light-gray: #f1f1f1;
@@ -16,11 +16,11 @@
 
 @mixin lightButton {
   background-color: transparent;
-  color: var(--light-button);
+  color: var(--minchew-blue-dark-accent);
   font-size: x-large;
-  padding: 1rem 2rem;
-  border: 2px solid var(--light-button);
-  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--minchew-blue-dark-accent);
+  border-radius: 1rem;
   &:hover {
     background-color: var(--minchew-blue);
     color: var(--black);

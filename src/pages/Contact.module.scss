@@ -1,0 +1,83 @@
+@import '../styles/custom-properties.scss';
+@import '../styles/custom-media.scss';
+
+.contact {
+  color: var(--minchew-blue);
+  padding: 0 10%;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      padding: 0 5%;
+    }
+  }
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 275px 4vw auto;
+  grid-template-rows: 2vh auto auto 4vw auto;
+  grid-template-areas:
+    '    .    .     .'
+    'address  .   form'
+    'address  .   form'
+    '   pic   .   form'
+    '   .     .    form';
+  text-align: left;
+}
+.tagline {
+  color: var(--minchew-blue-dark-accent);
+}
+.first {
+  font-weight: 700;
+  font-size: 3vw;
+  letter-spacing: 2.6vw;
+  text-transform: uppercase;
+}
+.second {
+  font-weight: 700;
+  font-size: 3vw;
+  letter-spacing: 1.65vw;
+  text-transform: uppercase;
+}
+.third {
+  font-weight: 700;
+  font-size: 3vw;
+  letter-spacing: initial;
+  text-transform: uppercase;
+}
+
+.pic {
+  grid-area: pic;
+  font-family: Poppins;
+}
+.form {
+  grid-area: form;
+}
+.address {
+  grid-area: address;
+}
+.address a {
+  color: var(--minchew-blue);
+}
+
+.nameEmailRow {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.nameEmailInput {
+  width: 48%;
+  margin-bottom: 1rem;
+  @media screen and (max-width: $breakpoint-large) {
+    width: 100%;
+  }
+}
+.textArea {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contactButton {
+  @include lightButton;
+}
