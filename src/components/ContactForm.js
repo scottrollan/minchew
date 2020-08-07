@@ -66,7 +66,7 @@ const ContactForm = () => {
       }}
       id="contactForm"
     >
-      <input type="hidden" name="contact-form" value="contact" />{' '}
+      <input type="hidden" name="contact-form" value="contact" />
       <AlertMessageSent />
       <h2 style={{ color: 'var(--light-grey)', padding: '2vh 0' }}>
         CONTACT US
@@ -102,13 +102,15 @@ const ContactForm = () => {
         required
         className={styles.textArea}
       />
-      <Button
-        variant="secondary"
-        className={styles.contactButton}
-        type="submit"
-      >
-        Send
-      </Button>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Button
+          variant="secondary"
+          className={styles.contactButton}
+          type="submit"
+        >
+          Send
+        </Button>
+      </div>
     </Form>
   );
 };

@@ -27,7 +27,12 @@
   z-index: 1;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-large) {
-      background-color: var(--minchew-blue);
+      background-image: linear-gradient(
+        var(--minchew-blue-dark-accent),
+        var(--minchew-blue-dark-accent),
+        var(--minchew-blue),
+        var(--minchew-blue-dark-accent)
+      );
     }
   }
 }
@@ -41,13 +46,38 @@
     }
   }
 }
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      display: none;
+    }
+  }
+}
+.pageName {
+  position: absolute;
+  transform: rotate(-90deg) scaleX(-1);
+  transform-origin: top left;
+}
+.content {
+  color: white;
+  font-size: calc(48px + 1vw);
+  transform: scaleX(-1);
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      font-size: 9vw;
+    }
+  }
+}
 .advertisers p,
 .advertisers ul {
   margin: 1rem 10%;
   color: var(--white);
   z-index: 2;
 }
-.advertisers p:nth-child(3) {
+.advertisers p:nth-child(4) {
   margin-top: 40vh;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-large) {

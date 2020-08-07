@@ -7,6 +7,11 @@ const Agencies = () => {
     <div className={styles.agencies}>
       <div className={styles.overlay}></div>
       <img src={photo} alt="" />
+      <div className={styles.sticky}>
+        <div className={styles.pageName}>
+          <h1 className={styles.content}>Agencies</h1>
+        </div>
+      </div>
       <p>
         Have an advertising project out of your scope of expertise? Too many
         markets to manage? Looking for some innovative solutions or a fresh

@@ -14,9 +14,30 @@ const Contact = () => {
           <ContactForm />
         </div>
         <div className={styles.pic}>
-          <div className={[`${styles.tagline} ${styles.first}`]}>Your</div>
-          <div className={[`${styles.tagline} ${styles.second}`]}>Media</div>
-          <div className={[`${styles.tagline} ${styles.third}`]}>Maximized</div>
+          <div className={styles.tagline}>
+            <span>Y</span>
+            <span>O</span>
+            <span>U</span>
+            <span>R</span>
+          </div>
+          <div className={styles.tagline}>
+            <span>M</span>
+            <span>E</span>
+            <span>D</span>
+            <span>I</span>
+            <span>A</span>
+          </div>
+          <div className={styles.tagline}>
+            <span>M</span>
+            <span>A</span>
+            <span>X</span>
+            <span>I</span>
+            <span>M</span>
+            <span>I</span>
+            <span>Z</span>
+            <span>E</span>
+            <span>D</span>
+          </div>
         </div>
         <div className={styles.address}>
           <h4 className={styles.responsiveTitle}>Minchew Media</h4>

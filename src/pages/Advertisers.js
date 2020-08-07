@@ -7,6 +7,11 @@ const Advertisers = () => {
     <div className={styles.advertisers}>
       <div className={styles.overlay}></div>
       <img src={photo} alt="" />
+      <div className={styles.sticky}>
+        <div className={styles.pageName}>
+          <h1 className={styles.content}>Advertisers</h1>
+        </div>
+      </div>{' '}
       <p>Looking for a media partner to help you maximize your ROI?</p>
       <p>
         Whether your marketing plans call for one market, one hundred markets or

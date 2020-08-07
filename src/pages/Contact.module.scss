@@ -4,6 +4,8 @@
 .contact {
   color: var(--minchew-blue);
   padding: 0 10%;
+  display: flex;
+  justify-content: center;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       padding: 0 5%;
@@ -22,33 +24,38 @@
     '   pic   .   form'
     '   .     .    form';
   text-align: left;
-}
-.tagline {
-  color: var(--minchew-blue-dark-accent);
-}
-.first {
-  font-weight: 700;
-  font-size: 3vw;
-  letter-spacing: 2.6vw;
-  text-transform: uppercase;
-}
-.second {
-  font-weight: 700;
-  font-size: 3vw;
-  letter-spacing: 1.65vw;
-  text-transform: uppercase;
-}
-.third {
-  font-weight: 700;
-  font-size: 3vw;
-  letter-spacing: initial;
-  text-transform: uppercase;
+  @media screen and (max-width: $breakpoint-large) {
+    grid-template-columns: auto 50% 50% auto;
+    grid-template-rows: 2rem auto auto 2rem;
+    grid-template-areas:
+      '.   .     .  .'
+      '. form  form .'
+      '.address pic .'
+      '.   .     .  .';
+  }
 }
 
 .pic {
   grid-area: pic;
   font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+.tagline {
+  display: flex;
+  font-size: 3vw;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  color: var(--minchew-blue-dark-accent);
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      padding: 0 1rem;
+      font-weight: 900;
+    }
+  }
+}
+
 .form {
   grid-area: form;
 }
