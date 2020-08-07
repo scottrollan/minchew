@@ -20,9 +20,9 @@
   grid-template-areas:
     '    .    .     .'
     'address  .   form'
-    'address  .   form'
+    'pic  .   form'
     '   pic   .   form'
-    '   .     .    form';
+    '   pic     .    form';
   text-align: left;
   @media screen and (max-width: $breakpoint-large) {
     grid-template-columns: auto 50% 50% auto;
