@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
 import AlertMessageSent from './AlertMessageSent';
 import styles from './Contact.module.scss';
 

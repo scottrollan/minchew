@@ -7,10 +7,10 @@
   flex-direction: column;
   font-size: calc(18px + 0.5vw);
   text-align: left;
-  background-image: url('../assets/gears.jpg');
+  background-image: url('../assets/buildings.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 80% 60%;
+  background-size: cover;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-large) {
       background-attachment: scroll;
@@ -73,8 +73,8 @@
   text-align: center;
   z-index: 2;
 }
-.experience p:nth-child(4) {
-  margin-top: 40vh;
+.experience p {
+  margin: 20vh 10%;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-large) {
       margin-top: 1rem;
@@ -98,6 +98,8 @@
   width: 30%;
   height: 150px;
   margin: 25px calc(10% / 6);
+  padding: 0.5rem;
+  box-sizing: border-box;
   border-radius: 1rem;
   text-align: center;
   transition: all 0.4s ease-in-out;

@@ -1,12 +1,16 @@
 @import '../styles/custom-properties.scss';
 @import '../styles/custom-media.scss';
 
+.home {
+  background-color: var(--white);
+}
 .textScrollDiv {
   @include eighty;
   height: 44vw;
   max-height: 592px;
-  max-width: 1080px;
+  max-width: 1076px;
   background-image: url('../assets/multimediaGal.jpg');
+  background-repeat: no-repeat;
   background-size: contain;
   // background-repeat: no-repeat;
   display: flex;
@@ -112,11 +116,11 @@
 }
 .third {
   opacity: 0;
-  animation: fade-out ease 3s;
-  -webkit-animation: fade-out ease 3s;
-  -moz-animation: fade-out ease 3s;
-  -o-animation: fade-out ease 3s;
-  -ms-animation: fade-out ease 3s;
+  animation: fade-out ease 2s;
+  -webkit-animation: fade-out ease 2s;
+  -moz-animation: fade-out ease 2s;
+  -o-animation: fade-out ease 2s;
+  -ms-animation: fade-out ease 2s;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       opacity: 1;

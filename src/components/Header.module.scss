@@ -2,10 +2,13 @@
 @import '../styles/custom-media.scss';
 
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   margin: 0;
   background-color: var(--black);
-  padding: 3rem 0;
+  padding: 3rem 0 1rem;
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       padding: 0;
@@ -16,6 +19,7 @@
 .navBar {
   width: 80%;
   margin: 0 10%;
+  background-color: var(--black);
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       display: flex;
@@ -29,8 +33,9 @@
 h3 {
   letter-spacing: 5px;
   font-weight: 900;
-  // @media (pointer: coarse) {
-  //   @media screen and (max-width: $breakpoint-handheld) {
-  //   }
-  // }
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+    }
+    letter-spacing: 2px;
+  }
 }

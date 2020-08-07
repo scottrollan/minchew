@@ -4,7 +4,7 @@ import styles from './Home.module.scss';
 
 const Home = () => {
   return (
-    <div className={styles.Home}>
+    <div className={styles.home}>
       <div className={[`${styles.textScrollDiv} ${styles.eighty} `]}>
         <div className={styles.scrollWrapper}>
           <div className={styles.maximized}>

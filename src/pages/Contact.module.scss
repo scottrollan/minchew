@@ -6,6 +6,7 @@
   padding: 0 10%;
   display: flex;
   justify-content: center;
+  background-color: var(--white);
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       padding: 0 5%;
