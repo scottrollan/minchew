@@ -4,6 +4,14 @@
 .home {
   background-color: var(--white);
 }
+.home h3 {
+  width: 100%;
+  text-align: center;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 2vw;
+  margin-bottom: 0;
+}
 .textScrollDiv {
   @include eighty;
   height: 44vw;
@@ -11,7 +19,7 @@
   max-width: 1076px;
   background-image: url('../assets/multimediaGal.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   // background-repeat: no-repeat;
   display: flex;
   justify-content: flex-end;

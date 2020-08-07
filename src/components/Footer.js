@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
+  const thisYear = new Date().getFullYear();
   return (
     <div className={styles.footer}>
       <div>
@@ -12,7 +12,9 @@ const Footer = () => {
         Minchew Media, LLC &#183; 678-368-4740 &#183; 32 Lakeshore Dr - Marietta
         Georgia 30067
       </div>
-      <div>Content &#169; 2020. Minchew Media, LLC. All rights reserved.</div>
+      <div>
+        Content &#169; {thisYear}. Minchew Media, LLC. All rights reserved.
+      </div>
     </div>
   );
 };

@@ -5,6 +5,7 @@ import styles from './Home.module.scss';
 const Home = () => {
   return (
     <div className={styles.home}>
+      <h3>Media Planning and Placement Services for Agencies and Clients</h3>
       <div className={[`${styles.textScrollDiv} ${styles.eighty} `]}>
         <div className={styles.scrollWrapper}>
           <div className={styles.maximized}>

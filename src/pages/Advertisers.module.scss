@@ -4,6 +4,7 @@
 .advertisers {
   display: flex;
   position: relative;
+  width: 100%;
   flex-direction: column;
   font-size: calc(18px + 0.5vw);
   text-align: left;
@@ -71,6 +72,7 @@
     }
   }
 }
+
 .advertisers p,
 .advertisers ul {
   margin: 1rem 10%;
