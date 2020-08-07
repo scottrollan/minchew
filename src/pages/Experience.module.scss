@@ -1,0 +1,109 @@
+@import '../styles/custom-properties.scss';
+@import '../styles/custom-media.scss';
+
+.experience {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-size: calc(18px + 0.5vw);
+  text-align: left;
+  background-image: url('../assets/gears.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 80% 60%;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      background-attachment: scroll;
+      background-size: contain;
+      z-index: 3;
+    }
+  }
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark-overlay);
+  z-index: 1;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      background-image: linear-gradient(
+        var(--minchew-blue-dark-accent),
+        var(--minchew-blue-dark-accent),
+        var(--minchew-blue),
+        var(--minchew-blue-dark-accent)
+      );
+    }
+  }
+}
+.experience img {
+  display: none;
+  width: 100%;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      display: inherit;
+      z-index: 2;
+    }
+  }
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-handheld) {
+      display: none;
+    }
+  }
+}
+.pageName {
+  position: absolute;
+  transform: rotate(-90deg) scaleX(-1);
+  transform-origin: top left;
+}
+.content {
+  color: white;
+  font-size: 4vw;
+  transform: scaleX(-1);
+}
+
+.experience p {
+  margin: 1rem 10%;
+  color: var(--white);
+  text-align: center;
+  z-index: 2;
+}
+.experience p:nth-child(4) {
+  margin-top: 40vh;
+  @media (pointer: coarse) {
+    @media screen and (max-width: $breakpoint-large) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 3;
+  margin: 0 10%;
+}
+.clients span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-overlay);
+  color: var(--white);
+  width: 30%;
+  height: 150px;
+  margin: 25px calc(10% / 6);
+  border-radius: 1rem;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background: var(--light-overlay);
+    color: var(--black);
+    transform: scale(1.1);
+  }
+}
