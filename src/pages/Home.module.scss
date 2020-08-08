@@ -11,6 +11,10 @@
   color: var(--white);
   font-size: 2vw;
   margin-bottom: 0;
+  padding-bottom: 1rem;
+  @media screen and (max-width: $breakpoint-large) {
+    display: none;
+  }
 }
 .textScrollDiv {
   @include eighty;
@@ -96,11 +100,11 @@
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       opacity: 1;
-      animation: fade-in ease 3s;
-      -webkit-animation: fade-in ease 3s;
-      -moz-animation: fade-in ease 3s;
-      -o-animation: fade-in ease 3s;
-      -ms-animation: fade-in ease 3s;
+      animation: fade-in ease 10s;
+      -webkit-animation: fade-in ease 10s;
+      -moz-animation: fade-in ease 10s;
+      -o-animation: fade-in ease 10s;
+      -ms-animation: fade-in ease 10s;
     }
   }
 }
@@ -114,11 +118,11 @@
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       opacity: 1;
-      animation: fade-in ease 6s;
-      -webkit-animation: fade-in ease 6s;
-      -moz-animation: fade-in ease 6s;
-      -o-animation: fade-in ease 6s;
-      -ms-animation: fade-in ease 6s;
+      animation: fade-in ease 15s;
+      -webkit-animation: fade-in ease 15s;
+      -moz-animation: fade-in ease 15s;
+      -o-animation: fade-in ease 15s;
+      -ms-animation: fade-in ease 15s;
     }
   }
 }
@@ -132,11 +136,11 @@
   @media (pointer: coarse) {
     @media screen and (max-width: $breakpoint-handheld) {
       opacity: 1;
-      animation: fade-in ease 9s;
-      -webkit-animation: fade-in ease 9s;
-      -moz-animation: fade-in ease 9s;
-      -o-animation: fade-in ease 9s;
-      -ms-animation: fade-in ease 9s;
+      animation: fade-in ease 20s;
+      -webkit-animation: fade-in ease 20s;
+      -moz-animation: fade-in ease 20s;
+      -o-animation: fade-in ease 20s;
+      -ms-animation: fade-in ease 20s;
     }
   }
 }

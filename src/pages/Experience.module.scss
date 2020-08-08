@@ -108,4 +108,8 @@
     color: var(--black);
     transform: scale(1.1);
   }
+  @media (max-width: $breakpoint-large) {
+    width: 45%;
+    margin: calc(10% / 4);
+  }
 }
