@@ -1,12 +1,10 @@
 import React from 'react';
-import photo from '../assets/gears.jpg';
 import styles from './Experience.module.scss';
 
 const Experience = () => {
   return (
     <div className={styles.experience}>
       <div className={styles.overlay}></div>
-      <img src={photo} alt="" />
       <div className={styles.sticky}>
         <div className={styles.pageName}>
           <h1 className={styles.content}>Experience</h1>
