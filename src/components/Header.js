@@ -32,7 +32,7 @@ const Header = () => {
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/About"
+              to="/about"
             >
               About
             </Link>
@@ -40,28 +40,28 @@ const Header = () => {
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/Agencies"
+              to="/agencies"
             >
               For Agencies
             </Link>
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/Advertisers"
+              to="/advertisers"
             >
               For Advertisers
             </Link>
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/Contact"
+              to="/contact"
             >
               Contact
             </Link>
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/Experience"
+              to="/experience"
             >
               Experience
             </Link>

@@ -16,11 +16,11 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/About" exact component={About}></Route>
-          <Route path="/Agencies" exact component={Agencies}></Route>
-          <Route path="/Advertisers" exact component={Advertisers}></Route>
-          <Route path="/Experience" exact component={Experience}></Route>
-          <Route path="/Contact" exact component={Contact}></Route>
+          <Route path="/about" exact component={About}></Route>
+          <Route path="/agencies" exact component={Agencies}></Route>
+          <Route path="/advertisers" exact component={Advertisers}></Route>
+          <Route path="/experience" exact component={Experience}></Route>
+          <Route path="/contact" exact component={Contact}></Route>
           <Route path="/" exact component={Home}></Route>
         </Switch>
       </Router>
