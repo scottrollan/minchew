@@ -17,8 +17,8 @@ function App() {
         <Header />
         <Switch>
           <Route path="/about" exact component={About}></Route>
-          <Route path="/agencies" exact component={Agencies}></Route>
-          <Route path="/advertisers" exact component={Advertisers}></Route>
+          <Route path="/for-agencies" exact component={Agencies}></Route>
+          <Route path="/for-advertisers" exact component={Advertisers}></Route>
           <Route path="/experience" exact component={Experience}></Route>
           <Route path="/contact" exact component={Contact}></Route>
           <Route path="/" exact component={Home}></Route>

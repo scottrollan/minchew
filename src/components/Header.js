@@ -40,14 +40,14 @@ const Header = () => {
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/agencies"
+              to="/for-agencies"
             >
               For Agencies
             </Link>
             <Link
               onClick={() => $('.navbar-toggler').click()}
               className="item nav-link"
-              to="/advertisers"
+              to="/for-advertisers"
             >
               For Advertisers
             </Link>
