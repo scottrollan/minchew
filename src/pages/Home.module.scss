@@ -51,6 +51,9 @@
   -moz-animation: scroll-up 30s linear infinite;
   -webkit-animation: scroll-up 30s linear infinite;
   animation: scroll-up 30s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
   @media screen and (max-width: $breakpoint-extra-large) {
     -moz-animation: scroll-up 60s linear infinite;
     -webkit-animation: scroll-up 60s linear infinite;
