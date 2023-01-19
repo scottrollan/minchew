@@ -48,9 +48,9 @@
   padding: 0 2rem;
   text-align: left;
   /* apply animation */
-  -moz-animation: scroll-up 30s linear infinite;
-  -webkit-animation: scroll-up 30s linear infinite;
-  animation: scroll-up 30s linear infinite;
+  -moz-animation: scroll-up 36s linear infinite;
+  -webkit-animation: scroll-up 36s linear infinite;
+  animation: scroll-up 36s linear infinite;
   &:hover {
     animation-play-state: paused;
   }
@@ -75,6 +75,7 @@
     }
   }
 }
+
 .maximized {
   height: 100%;
   display: flex;
@@ -172,9 +173,9 @@
   -webkit-transform: translateY(300px);
   transform: translateY(300px);
   /* apply animation */
-  -moz-animation: scroll-up-mobile 30s linear infinite;
-  -webkit-animation: scroll-up-mobile 30s linear infinite;
-  animation: scroll-up-mobile 30s linear infinite;
+  -moz-animation: scroll-up-mobile 60s linear infinite;
+  -webkit-animation: scroll-up-mobile 60s linear infinite;
+  animation: scroll-up-mobile 60s linear infinite;
 }
 
 @-moz-keyframes scroll-up {

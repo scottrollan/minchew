@@ -3,7 +3,7 @@ import styles from '../pages/Home.module.scss';
 
 export const ScrollText = () => {
   return (
-    <div>
+    <div style={{ margin: '0' }}>
       <p className={styles.testimonial}>
         Thank you – as I am fussing about an agency that I work with that is
         sooo uncooperative, I say aloud….”why can’t they all be Michele
